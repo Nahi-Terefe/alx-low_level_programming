@@ -1,15 +1,13 @@
 #include <stdio.h>
 
-/** 
+/**
+ * main - Entry point to c lang
  *
- * main function - an entry to the c program
- *
- * puts -  displays a char to the std output
- * 
- * Return - returns 0
+ * Return: returns always 0
  */
 int main(void)
 {
+	/* displays the char inside quotation */
 	puts("\"Programming is like building a multilingual puzzle");
 	return (0);
 }
