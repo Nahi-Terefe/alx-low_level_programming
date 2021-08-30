@@ -2,7 +2,7 @@
 
 /**
  * main -	entry to c program
- * Desc:	this program will print out all possible different 
+ * Desc:	this program will print out all possible different
  *			combinations of two digits.
  * Return:	returns zero
  */
