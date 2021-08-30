@@ -2,8 +2,7 @@
 
 /**
  * main -	entry to c program
- * Desc:	this program will print out all possible different
- *			combinations of three digits.
+ * Desc:	this program will print out all possib
  * Return:	returns zero
  */
 int main(void)
@@ -22,17 +21,17 @@ int main(void)
 				{
 					if ((i < k) || (i == k && j < l))
 					{
-						putchar(i);
-						putchar(j);
-						putchar(' ');
-						putchar(k);
-						putchar(l);
+					putchar(i);
+					putchar(j);
+					putchar(' ');
+					putchar(k);
+					putchar(l);
 
-						if (!(i == '9' && j == '8'))
-						{
-							putchar(',');
-							putchar(' ');
-						}
+					if (!(i == '9' && j == '8'))
+					{
+						putchar(',');
+						putchar(' ');
+					}
 					}
 				}
 			}
