@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * _abs - checks a given argumet either is alpha or not..
- * @c: peram accepts any int data type.
+ * _abs - gives absolute value of a given number
+ * @n: peram accepts any int data type.
  * Return: Always 0 (sucsess).
  */
 int _abs(int n)
@@ -11,7 +11,7 @@ int _abs(int n)
 	{
 		return (n);
 	}
-	else 
+	else
 	{
 		return (-1 * n);
 	}
