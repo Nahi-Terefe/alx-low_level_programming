@@ -1,5 +1,5 @@
 #include "_putchar.c"
-#include "holberton.h"
+#include "main.h"
 
 /**
  * main - entry to c program
