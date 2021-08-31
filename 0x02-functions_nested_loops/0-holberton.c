@@ -8,10 +8,10 @@
  */
 int main(void)
 {
-	char school_name[] = "_putchar";
+	char school_name[] = "Holberton";
 	int i;
 
-	for (i = 0; i < 8; i++)
+	for (i = 0; i < 9; i++)
 	{
 		_putchar(school_name[i]);
 	}
