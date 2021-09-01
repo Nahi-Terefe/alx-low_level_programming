@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_sign - detects the sign of a given number and 
+ * print_sign - detects the sign of a given number and
  *				prints out the value.
  * @n: peram accepts any int data type.
  * Return: Always 0 (sucsess).
