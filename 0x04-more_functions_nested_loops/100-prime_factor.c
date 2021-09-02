@@ -8,37 +8,23 @@
  */
 int main(void)
 {
-	long i, j;
-	long num = 612852475143;
-	long largest_prime = 1;
-	int isprime;
+	long int n = 612852475143;
+	long int i = 2, largest_prime;
 
-	for (i = 2; i <= num; i++)
+	while (n != 0)
 	{
-
-		/* check if the number is divisible by i */
-		if (num % i == 0)
+		if (n % i != 0)
+			i = i + 1;
+		else
 		{
-
-			isprime = 1;
-
-			/* check if the devisor is prime */
-
-			for (j = 2; j <= i / 2; j++)
+			largest_prime = n;
+			n = n / i;
+			if (n == 1)
 			{
-				if (i % j == 0)
-				{
-					isprime = 0;
-					break;
-				}
-			}
-			if (isprime == 1)
-			{
-				largest_prime = i;
+				printf("%ld\n", largest_prime);
+				break;
 			}
 		}
 	}
-	printf("%ld \n", largest_prime);
-
 	return (0);
 }
