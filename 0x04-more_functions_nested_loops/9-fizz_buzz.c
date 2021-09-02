@@ -5,9 +5,9 @@
  * main -	prints out Fizz if number is divisible by 3
  *			and Buzz if its by 5 and FizzBuzz if divisible by both
  *.
- * Return: void.
+ * Return: zero.
  */
-void main(void)
+int main(void)
 {
 	int i = 1;
 
@@ -33,4 +33,5 @@ void main(void)
 		i++;
 	}
 	printf("\n");
+	return (0);
 }
