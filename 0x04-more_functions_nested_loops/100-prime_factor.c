@@ -34,12 +34,11 @@ int main(void)
 			}
 			if (isprime == 1)
 			{
-				printf("%li ", i);
 				largest_prime = i;
 			}
 		}
 	}
-	printf("\nlargest prime: %ld \n", largest_prime);
+	printf("%ld \n", largest_prime);
 
 	return (0);
 }
