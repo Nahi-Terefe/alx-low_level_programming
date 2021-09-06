@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * print_rev - prints a string to stdout in reverse.
- * @str: pointer which accepts address of a string value.
+ * @s: pointer which accepts address of a string value.
  * Return: nothing.
  */
 void print_rev(char *s)
