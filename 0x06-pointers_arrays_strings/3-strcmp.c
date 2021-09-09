@@ -19,6 +19,8 @@ int _strcmp(char *s1, char *s2);
 			flag = 1;
 			break;
 		}
+
+		i++;
 	}
 	if (flag == 0)
 	{
