@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * *_strchr - locate a char in a string.
- * @s: pointer
- * @c: char to be located.
+ * _strspn - gets the length of a prefix substring.
+ * @s: string pointer.
+ * @accept: bytes to be checked on s.
  *
  * Return: a pointer.
  */
