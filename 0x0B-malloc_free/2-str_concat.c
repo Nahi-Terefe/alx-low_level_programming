@@ -8,39 +8,36 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-	int i, j, s1_len, s2_len, str_len;
-	char *con_cat;
+	int i, j, k, l;
+	char *p;
 
-	for (s1_len = 0; s1[s1_len] != '\0'; s1_len++)
+	if (s1 == NULL)
+	{
+		s1 = "";
+	}
+	if (s2 == NULL)
+	{
+		s2 = "";
+	}
+	for (i = 0; *(s1 + i) != '\0'; i++)
 	{
 	}
-	s1_len = s1_len + 1;
-
-	for (s2_len = 0; s2[s2_len] != '\0'; s2_len++)
+	for (j = 0; *(s2 + j) != '\0'; j++)
 	{
 	}
-	s2_len = s2_len + 1;
-	str_len = s1_len + s2_len;
-
-	con_cat = (char *)malloc((str_len) * sizeof(char));
-
-	if (con_cat == NULL)
+	p = malloc(sizeof(char) * (i + j + 1));
+	if (p == NULL)
 	{
 		return (NULL);
 	}
-	for (i = 0; s1[i] != '\0'; i++)
+	for (k = 0; k < i; k++)
 	{
-		con_cat[i] = s1[i];
+		*(p + k) = *(s1 + k);
 	}
-	con_cat[i] = ' ';
-	i++;
-
-	for (j = 0; s2[j] != '\0'; j++)
+	for (l = 0; l < j; l++)
 	{
-		con_cat[i] = s2[j];
-		i++;
+		*(p + (i + l)) = *(s2 + l);
 	}
-	con_cat[i] = '\0';
-
-	return (con_cat);
+	p[i + j] = '\0';
+	return (p);
 }
