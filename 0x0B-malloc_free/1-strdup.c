@@ -1,7 +1,4 @@
 #include "main.h"
-#include <stdlib.h>
-#include <stddef.h>
-#include <string.h>
 
 /**
  * *_strdup -  creates an array of chars,
