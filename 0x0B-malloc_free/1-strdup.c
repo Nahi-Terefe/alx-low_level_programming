@@ -11,27 +11,30 @@
  */
 char *_strdup(char *str)
 {
-	int i;
-	int str_size = strlen(str);
+	int i, str_len;
+	char *dup_str;
 
-	if (str == NULL)
+	if (str == 0)
 	{
 		return (NULL);
 	}
 	else
 	{
-		char *dup_str = (char *)malloc(str_size * sizeof(char));
+		for (str_len = 0; str[str_len] != '\0'; str_len++)
+		{
+		}
+
+		dup_str = (char *)malloc(str_len * sizeof(char));
 
 		if (dup_str == NULL)
 		{
 			return (NULL);
 		}
-
-		for (i = 0; i < str_size; i++)
+		for (i = 0; str[i] != '\0'; i++)
 		{
 			dup_str[i] = str[i];
 		}
-		dup_str[str_size] = '\0';
+		dup_str[i] = '\0';
 
 		return (dup_str);
 	}
