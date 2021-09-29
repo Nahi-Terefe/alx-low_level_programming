@@ -1,8 +1,5 @@
 #include "function_pointers.h"
 
-void print_name_as_is(char *name);
-void print_name_uppercase(char *name);
-
 /**
  * print_name - print name based on the desired function.
  *
@@ -11,12 +8,13 @@ void print_name_uppercase(char *name);
  */
 void print_name(char *name, void (*f)(char *))
 {
-	if (f == print_name_as_is)
+	if (name == 0)
 	{
-		print_name_as_is(name);
+		return;
 	}
-	else if (f == print_name_uppercase)
+	if (f == 0)
 	{
-		print_name_uppercase(name);
+		return;
 	}
+	f(name);
 }
