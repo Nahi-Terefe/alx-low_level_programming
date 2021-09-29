@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "function_pointers.h": "c",
+        "dog.h": "c"
+    },
+    "C_Cpp.dimInactiveRegions": false
+}
