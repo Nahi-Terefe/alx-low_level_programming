@@ -11,7 +11,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 {
 	va_list args;
 	unsigned int i;
-	char *nil = "nil";
+	char *nil = "(nil)";
 	char *arg_strings = "";
 
 	va_start(args, n);
