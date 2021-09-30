@@ -1,11 +1,11 @@
 #include "variadic_functions.h"
 
 /**
- * sum_them_all - function that returns the sum of all its parameters.
- * @d: dog instance
- * @name: name of dog
- * @age: age of dog.
- * @owner: owner of the dog.
+ * sum_them_all - function that returns the sum of
+ *		all its parameters.
+ * @n: number of argument.
+ *
+ * Return: sum or zero.
  */
 int sum_them_all(const unsigned int n, ...)
 {
@@ -27,5 +27,5 @@ int sum_them_all(const unsigned int n, ...)
 
 	va_end(args);
 
-	return sum;
+	return (sum);
 }
