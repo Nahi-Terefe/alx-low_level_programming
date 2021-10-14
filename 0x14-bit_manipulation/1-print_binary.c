@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * print_binary - converts a binary to unsigned int.
+ * print_binary - convert int to binary and prints it out.
  *
- * @b: pointer to a string.
+ * @n: pointer to a string.
  *
- * Return: int or 0(fail)
+ * Return: nothing.
  */
 void print_binary(unsigned long int n)
 { 
