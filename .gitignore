@@ -3,9 +3,9 @@
 # !*/ then unignores anything that is a directory. This is crucial.
 
 # !*.* unignores all files with an extension.
-*
-!*/
-!*.*
+# *
+# !*/
+# !*.*
 
 # other ignore rules
 _putchar.c
