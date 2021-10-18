@@ -1,0 +1,21 @@
+> # 0x15. C - File I/O
+
+The project is about working with file management system calls to handle basic file *I/O operation.
+
+### System calls we will use to perform I/O operation are:
+* open
+* write
+* read
+* close
+
+> ### Task's included in the project
+
+|Tasks | Description |
+|:--- | :--------------|
+| [0-read_textfile.c  ]() | a function that reads a text file and prints it to the POSIX standard output.|
+
+
+> ### Author 
+
+[Nahom Terefe](github.com/nahi-terefe) 
+
