@@ -6,7 +6,7 @@
  * Description: a function that returns available node in the link
  * Return: number of node
  */
-size_t dlistint_len(const dlistint_t *h);
+size_t dlistint_len(const dlistint_t *h)
 {
 	size_t i = 0;
 
@@ -18,4 +18,3 @@ size_t dlistint_len(const dlistint_t *h);
 
 	return (i);
 }
-
