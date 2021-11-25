@@ -1,47 +1,38 @@
 #include "lists.h"
+
 /**
-* delete_dnodeint_at_index - function
-* @head: double poitner to first node in lnkd list
-* @index: index to where to delete
-*
-* Description: function that deletes the node at nth of a lnkd list
-* Return: 1 Success, -1 Fail
-*/
+ * delete_dnodeint_at_index - Entry point.
+ * @head: pointer value.
+ * @index: unsigned inv value
+ * Return: Always 0 (Success)
+ */
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
-	dlistint_t *temp, *temp2;
-	unsigned int idx = 0;
+	dlistint_t *node;
+	dlistint_t *aux;
+	unsigned int i = 0;
 
-	if (*head == NULL)
-	{
+	aux = *head;
+	if (!(*head))
 		return (-1);
-	}
 	if (index == 0)
 	{
-		temp = (*head)->next;
-		temp->prev = NULL;
-		/*free(temp);*/
+		*head = aux->next;
+		(*head)->prev = NULL;
+		free(aux);
 		return (1);
 	}
-	temp = *head;
-	while (temp != NULL)
+	while (i < index - 1)
 	{
-		if (idx == index)
-		{
-			temp2 = temp->next;
-			temp2->prev = temp->prev->prev;
-			temp = temp2->prev;
-			temp->next = temp2->next->next;
-			/*free(temp2);*/
-			return (1);
-		}
-		temp = temp->next;
-		idx++;
+		aux = aux->next;
+		if (aux == NULL)
+			return (-1);
+		i++;
 	}
-	if (idx < index)
-		return (-1);
-	if (temp->next == NULL)
-		return (1);
-
-	return (-1);
+	node = aux->next->next;
+	free(aux->next);
+	aux->next = node;
+	if (aux->next)
+		aux->next->prev = aux;
+	return (1);
 }
