@@ -1,4 +1,4 @@
-# -*- Makefile -*-
+# Makefile
 
-all: main.c holberton.c m.h
-    gcc main.c School.c -o school
+all: main.c holberton.c
+	gcc main.c holberton.c -o holberton
