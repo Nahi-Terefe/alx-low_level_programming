@@ -4,20 +4,13 @@
 def island_perimeter():
     """Returns the perimeter of the island described in grid"""
     perimeter = 0
-    for y in range(len(grid)):
-        for x in range(len(grid[0])):
-            if grid[y][x] == 1:
+    for row in range(len(grid)):
+        for column in range(len(grid[row])):
+            if grid[row][column] == 1:
                 perimeter += 4
-                if y > 0:
-                    if grid[y - 1][x] != 0:
-                        perimeter -= 1
-                if y < len(grid) - 1:
-                    if grid[y + 1][x] != 0:
-                        perimeter -= 1
-                if x > 0:
-                    if grid[y][x - 1] != 0:
-                        perimeter -= 1
-                if x < len(grid[0]) - 1:
-                    if grid[y][x + 1] != 0:
-                        perimeter -= 1
+                if column > 0 and grid[row][column - 1] == 1:
+                    perimeter -= 2
+                if row > 0 and grid[row - 1][column] == 1:
+                    perimeter -= 2
+
     return perimeter
