@@ -16,7 +16,7 @@ void print_array(int *array, int left, int right)
 	printf("%d\n", array[i]);
 }
 /**
- * binary_search_new - seacrh dividin
+ * binary_search_new - search dividing
  * @array: the sort
  * @left: min
  * @right: max
