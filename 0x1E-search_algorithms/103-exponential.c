@@ -2,8 +2,8 @@
 
 /**
  * print_array - print
- * @array: The sort 
- * @left: min 
+ * @array: The sort
+ * @left: min
  * @right: max
  * Return: Nothing
  */
@@ -17,10 +17,10 @@ void print_array(int *array, int left, int right)
 }
 /**
  * binary_search_new - seacrh dividin
- * @array: the sort 
- * @left: min 
- * @right: max 
- * @value: value 
+ * @array: the sort
+ * @left: min
+ * @right: max
+ * @value: value
  * Return: The index
  */
 int binary_search_new(int *array, int left, int right, int value)
