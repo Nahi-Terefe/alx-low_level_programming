@@ -1,10 +1,10 @@
 #include "search_algos.h"
 
 /**
- * print_array_new - print 
- * @array: The sort 
- * @left: min 
- * @right: max 
+ * print_array_new - print
+ * @array: The sort
+ * @left: min
+ * @right: max
  * Return: Nothing
  */
 void print_array_new(int *array, int left, int right)
@@ -53,11 +53,11 @@ int recursive_search(int *array, int low, int high, int value)
 }
 
 /**
- * advanced_binary - seacrh
- * @array: the sort 
+ * advanced_binary - search
+ * @array: the sort
  * @size: size
  * @value: value
- * Return: The index 
+ * Return: The index
  */
 int advanced_binary(int *array, size_t size, int value)
 {
